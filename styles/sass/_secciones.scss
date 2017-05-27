@@ -1,0 +1,121 @@
+/*secciones*/
+
+.section {
+    position: $relative;
+    padding-top: $h2 + $size20px;
+    padding-bottom: $h2 + $size20px;
+    text-align: $centro;
+}
+
+.section:before,
+.section:after {
+    content: " ";
+    display: table;
+}
+
+.section:after {
+    clear: both;
+}
+
+.section:before,
+.section:after {
+    content: " ";
+    display: table;
+}
+
+.section:after {
+    clear: both;
+}
+
+.section h2.title {
+    display: inline-block;
+    font-size: $h2 + 10px;
+    font-weight: $weight100;
+    padding: 10px 0;
+    margin-bottom: $h2 + 4px;
+    text-align: $centro;
+    border-bottom: $solido 1px #ccc;
+    border-top: $solido 1px #ccc;
+    text-transform: $mayuscula;
+    line-height: 1.2;
+}
+
+.section h2.title span {
+    font-size: $h2;
+}
+
+@media (max-width: 767px) {
+    .section h2.title {
+        font-size: $h2;
+    }
+}
+
+.section .img-responsive {
+    margin: 0 auto;
+}
+
+.section .dark-mask {
+    position: $absolute;
+    top: 0;
+    left: 0;
+    width: $cienxciento;
+    height: $cienxciento;
+    background: #000;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+
+.section .inline-title {
+    display: inline-block;
+    padding: $size20px - 10px;
+    border-top: $solido 1px #ccc;
+    border-bottom: $solido 1px #ccc;
+    text-transform: $mayuscula;
+}
+
+.text-narrow p {
+    font-size: $size20px;
+    font-weight: $weight300;
+    margin: 0 0 44px;
+}
+
+@media (max-width: 767px) {
+    .text-narrow p {
+        font-size: $size20px - 4px;
+    }
+}
+
+.text-gradient {
+    background: #ff7b21;
+    color: #fff;
+    background-image: -webkit-linear-gradient(top, #ff7b21 0%, #e8195f 100%);
+    background-image: linear-gradient(to bottom, #ff7b21 0%, #e8195f 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7b21', endColorstr='#e8195f', GradientType=0);
+}
+
+.text-gradient h2 {
+    border-color: #fff;
+}
+
+@media (max-width: 991px) {
+    .text-gray {
+        background: #eeeeee;
+    }
+}
+
+.text-parallax {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    -webkit-backface-visibility: $hidden;
+}
+.text-parallax.parallax-image1 {
+    background: url('../../img/paralax.jpg') $centro $centro no-repeat fixed;
+}
+
+@media (max-width: 991px) {
+    .text-parallax {
+        padding-top: $h2 + h2;
+        padding-bottom: $h2 + $h2;
+    }
+}

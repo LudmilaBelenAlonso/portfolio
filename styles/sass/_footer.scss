@@ -1,0 +1,79 @@
+/*footer*/
+
+#footer {
+    background: #222222;
+    font-size: $h2 - 6px;
+    line-height: $h2 + 10px;
+}
+
+#footer p.social {
+    text-align: left;
+}
+
+#footer p.social a {
+    margin-left: $size20px - 10px;
+    color: #fff;
+    display: inline-block;
+    width: $h2 + 10px;
+    height: $h2 + 10px;
+    border-radius: $size20px + 5px;
+    line-height: $h2 + 10px;
+    font-size: $size20px + 5px;
+    vertical-align: middle;
+    text-align: $centro;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+#footer p.social a.facebook {
+    background-color: #4460ae;
+}
+
+#footer p.social a.linkedin {
+    background-color: #1f97d9;
+}
+
+#footer p.social a.email {
+    background-color: #4a7f45;
+}
+
+@media (max-width: 767px) {
+    #footer p.social {
+        text-align: $centro;
+        margin-bottom: $size20px;
+    }
+}
+
+#footer p {
+    margin: 0;
+    text-align: right;
+    color: #eeeeee;
+    font-family: 'Roboto Slab', serif;
+    font-size: $size20px - 5px;
+}
+
+@media (max-width: 767px) {
+    #footer p {
+        text-align: $centro;
+    }
+}
+
+#footer p.template-bootstrapious {
+    margin-top: $size20px;
+    text-align: $centro;
+    color: #999999;
+    font-family: 'Roboto Slab', serif;
+    font-size: $size20px - 6px;
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#footer p.template-bootstrapious a {
+    color: #999999;
+}
+
+@media (max-width: 767px) {
+    #footer p.template-bootstrapious {
+        text-align: center;
+    }
+}

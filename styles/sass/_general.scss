@@ -1,0 +1,270 @@
+/*general*/
+
+button,
+a.btn,
+input.btn {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+strong {
+    font-weight: $weight300 + $weight400;
+}
+
+.mb20 {
+    margin-bottom: $h2 - 10px;
+}
+.mt-big {
+    margin-top: $h2 - 10px;
+}
+
+.affix,
+.navbar-fixed-top {
+    -webkit-transform: scale3d(1, 1, 1);
+}
+
+#style-switch-button {
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    border-radius: 0;
+}
+
+#style-switch {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 250px;
+    padding: $size20px;
+    position: fixed;
+    top: 140px;
+    left: 0;
+    background: #fff;
+    border: $solido 1px #eeeeee;
+}
+
+.clearfix:before,
+.clearfix:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after,
+.nav:after,
+.navbar:after {
+    clear: both;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.invisible {
+    visibility: $hidden;
+}
+
+.text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.hidden {
+    display: none;
+    visibility: $hidden;
+}
+
+.affix {
+    position: fixed;
+}
+
+
+/* dropdowns */
+.dropdown-menu > li > a {
+    padding: $size20px - 15px $size20px;
+}
+
+
+/* labels */
+.label {
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    text-transform: $mayuscula;
+}
+
+/* responsive utilities */
+@media (max-width: 767px) {
+    .text-center-xs {
+        text-align: $centro;
+    }
+    .text-center-xs img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .text-center-sm {
+        text-align: $centro;
+    }
+    .text-center-sm img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* tipografia */
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: $weight400 + 100;
+    line-height: 1.1;
+    color: inherit;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+    margin-top: $size20px + 2px;
+    margin-bottom: $size20px + 2px;
+}
+
+p {
+    margin: 0 0 11px;
+}
+
+.lead {
+    margin-bottom: $size20px + 2px;
+    font-size: $size20px - 2px;
+}
+
+@media (min-width: 768px) {
+    .lead {
+        font-size: $size20px + 4px;
+    }
+}
+
+.text-small {
+    font-size: $size20px - 6px;
+}
+
+.text-large {
+    font-size: $size20px;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-primary {
+    color: $color-naranja;
+}
+
+a.text-primary:hover {
+    color: $color-magenta;
+}
+
+.bg-primary {
+    color: #fff;
+    background-color: $color-naranja;
+}
+
+a.bg-primary:hover {
+    background-color: $color-magenta;
+}
+
+abbr[title],
+abbr[data-original-title] {
+    border-bottom: 1px dotted #999999;
+}
+
+address {
+    margin-bottom: $size20px + 2px;
+    line-height: 1.42857143;
+}
+
+a.badge:hover,
+a.badge:focus {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.list-group-item.active > .badge,
+.nav-pills > .active > a > .badge {
+    color: $color-naranja;
+    background-color: #ffffff;
+}
+
+.nav-pills > li > a > .badge {
+    margin-left: $size20px - 17px;
+}
+
+.reference-title {
+    font-size: $size20px - 5px;
+}
+
+/* scaffolding */
+body {
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #ffffff;
+}
+
+a {
+  color: #ff7b21;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #ff6700;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.img-rounded {
+  border-radius: 0;
+}

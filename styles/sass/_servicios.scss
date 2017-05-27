@@ -1,0 +1,184 @@
+/*servicios*/
+
+.services .heading {
+    font-size: $h2 - 10px ;
+    font-weight: $weight400 + 100;
+    margin-bottom: $size20px;
+    text-align: $centro;
+}
+
+.services p {
+    font-size: $size20px - 5px;
+    text-align: left;
+}
+
+#filter {
+    text-align: $centro;
+    margin: $size20px 0;
+    padding: 0;
+}
+
+#filter li {
+    display: inline-block;
+    list-style-type: none;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: $h2 - 10px;
+    border-top: $solido 1px $color-magenta;
+    border-bottom: $solido 1px $color-magenta;
+    margin: 0 $h2 - 10px $h2;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+#filter li a {
+    display: inline-block;
+    padding: $h2 - 10px;
+}
+
+#filter li.active,
+#filter li:hover {
+    background: $color-magenta;
+}
+
+#filter li.active a,
+#filter li:hover a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#references-masonry {
+    margin: 0 $h2 - 5px;
+    visibility: $hidden;
+}
+
+@media (max-width: 991px) {
+    #references-masonry {
+        margin: 0 auto;
+    }
+}
+
+.reference-item {
+    width: 255px;
+    overflow: $hidden;
+}
+
+@media (max-width: 1199px) {
+    .reference-item {
+        width: 205px;
+    }
+}
+
+@media (max-width: 991px) {
+    .reference-item {
+        width: 300px;
+    }
+}
+
+@media (max-width: 350px) {
+    .reference-item {
+        width: 260px;
+    }
+}
+
+.reference-item .reference {
+    margin-bottom: $size20px + 10px;
+    background: #fff;
+}
+
+.reference-item .reference a {
+    display: block;
+    position: $relative;
+    width: $cienxciento;
+    height: $cienxciento;
+    overflow: $hidden;
+}
+
+.reference-item .reference a .overlay {
+    display: block;
+    position: $absolute;
+    left: 0;
+    top: $cienxciento;
+    width: $cienxciento;
+    height: $cienxciento;
+    background: #333;
+    -webkit-box-sizing: 'border-box';
+    -moz-box-sizing: 'border-box';
+    box-sizing: 'border-box';
+    padding: $h2;
+    color: #fff;
+    text-align: $centro;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.reference-item .reference a .overlay h3 {
+    text-transform: $mayuscula;
+    font-weight: $weight400 + 100;
+}
+
+.reference-item .reference a img {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.reference-item .reference a:hover .overlay,
+.reference-item .reference a:focus .overlay {
+    display: block;
+    top: 0;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+.reference-item .reference a:hover img,
+.reference-item .reference a:focus img {
+    -webkit-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+}
+
+#detail {
+    padding: 20px 0;
+    max-width: $weight400 + $weight400 + 100;
+    margin: 0 auto 0;
+    display: none;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    text-align: left;
+}
+
+#detail .close {
+    position: $relative;
+    font-size: $h2 + 10px;
+    z-index: 100;
+}
+
+#detail .buttons {
+    text-align: $centro;
+    margin-top: $h2;
+}
+
+#detail .buttons a {
+    margin: 0 10px 10px;
+}
+
+#detail h1 {
+    display: inline-block;
+    font-size: $h2;
+    font-weight: $weight300 - 200;
+    padding: $size20px - 10px 0;
+    margin: $size20px + 2px 0;
+    text-align: $centro;
+    border-bottom: $solido 1px #ccc;
+    border-top: $solido 1px #ccc;
+    text-transform: $mayuscula;
+    line-height: 1.2;
+}
+
+@media (max-width: 767px) {
+    #detail h1 {
+        font-size: $h2 - 10px;
+    }
+}

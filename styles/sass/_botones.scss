@@ -1,0 +1,85 @@
+/* botones  */
+
+.btn {
+    font-weight: normal;
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: $mayuscula;
+    padding: $size20px - 14px $size20px - 8px;
+    font-size: $size20px - 4px;
+    line-height: 1.42857143;
+    border-radius: 0;
+}
+
+.btn-primary {
+    color: $color-magenta;
+    background-color: #ffffff;
+    border-color: $color-magenta;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    color: $color-naranja;
+    background-color: #ebebeb;
+    border-color: $color-naranja;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    background-color: #ffffff;
+    border-color: $color-naranja;
+}
+
+.btn-primary .badge {
+    color: #ffffff;
+    background-color: $color-naranja;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+    background: $color-naranja;
+    color: #ffffff;
+}
+
+.btn-lg {
+    padding: $size20px - 10px $size20px - 4px;
+    font-size: $size20px;
+    line-height: 1.33;
+    border-radius: 0;
+}
+
+.btn-sm {
+    padding: $size20px - 15px $size20px - 10px;
+    font-size: $size20px - 6px;
+    line-height: 1.5;
+    border-radius: 0;
+}
+
+.btn-xs {
+    padding: 1px $size20px - 15px;
+    font-size: $size20px - 6px;
+    line-height: 1.5;
+    border-radius: 0;
+}

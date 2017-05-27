@@ -1,0 +1,86 @@
+/*intro*/
+
+#intro {
+  position: $relative;
+  height: $cienxciento;
+}
+
+#intro .item {
+    height: $cienxciento;
+    background: url('../../img/home.jpg') $centro $centro no-repeat;
+    -webkit-background-size: $cover;
+    -moz-background-size: $cover;
+    -o-background-size: $cover;
+    background-size: $cover;
+    -webkit-backface-visibility: $hidden;
+}
+
+#intro .item .logo {
+    margin-bottom: 120px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-backface-visibility: $hidden;
+}
+
+@media (max-width: 767px) {
+  #intro .item .logo {
+    margin-bottom: $h2 + 10px;
+  }
+}
+
+#intro .item h1 {
+    font-size: $h2 + $size20px;
+    color: #fff;
+    margin-bottom: $h2;
+    font-weight: $weight400 + $weight300;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-backface-visibility: $hidden;
+}
+
+@media (max-width: 991px) {
+    #intro .item h1 {
+        font-size: $h2;
+    }
+}
+
+@media (max-width: 767px) {
+    #intro .item h1 {
+        font-size: $h2 - 5px;
+    }
+}
+
+#intro .item h2 {
+    color: #fff;
+    margin-bottom: $h2 + $h2 + $h2;
+    font-weight: $weight400;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-backface-visibility: $hidden;
+}
+
+@media (max-width: 767px) {
+    #intro .item h2 {
+        font-size: $responsive-font;
+        margin-bottom: $size20px;
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 1199px) {
+    #intro .item h2 {
+        font-size: $responsive-font;
+        margin-bottom: $h2;
+    }
+}
+
+#intro .item .carousel-caption {
+    left: 0;
+    right: 0;
+}
+
+#intro .container,
+#intro .row {
+    height: $cienxciento;
+    position: $relative;
+}

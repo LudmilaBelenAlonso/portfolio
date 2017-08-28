@@ -7,6 +7,12 @@ html, body, #all {
   min-height: 100%; }
 
 /*general*/
+img { 
+  margin: 2px;
+  width: 40px;
+}
+
+
 button,
 a.btn,
 input.btn {

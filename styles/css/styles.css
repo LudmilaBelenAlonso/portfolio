@@ -7,7 +7,7 @@ html, body, #all {
   min-height: 100%; }
 
 /*general*/
-img { 
+#logo { 
   margin: 2px;
   width: 40px;
 }
